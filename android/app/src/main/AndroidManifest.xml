@@ -1,6 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 인터넷 권한 (★필수) -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <!-- HTTP 요청 가능하도록 설정 (★HTTP 서버 시 필수) -->
     <application
+        android:usesCleartextTraffic="true"
         android:label="awstestapp"
+
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
